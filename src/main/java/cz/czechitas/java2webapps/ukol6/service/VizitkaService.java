@@ -3,12 +3,10 @@ package cz.czechitas.java2webapps.ukol6.service;
 import cz.czechitas.java2webapps.ukol6.entity.Vizitka;
 import cz.czechitas.java2webapps.ukol6.repository.VizitkaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class VizitkaService {

@@ -2,7 +2,7 @@
 [@c.page]
     <div class="seznam">
         [#list seznam as vizitka]
-            <a href="/vizitka/${vizitka?index}">
+            <a href="/${vizitka?index}">
                 <div class="vizitka">
                     <div class="jmeno">${vizitka.celeJmeno}</div>
                     <div class="firma">${vizitka.firma}</div>
