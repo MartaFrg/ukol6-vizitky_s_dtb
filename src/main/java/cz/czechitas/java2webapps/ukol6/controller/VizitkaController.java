@@ -37,13 +37,13 @@ public class VizitkaController {
     }
 
 
-    @GetMapping("/{id}")
-        public ModelAndView vizitka(@PathVariable int id) {
+    @GetMapping("/{id:[0-9]+}")
+        public ModelAndView vizitka(@PathVariable long id) {
         Vizitka vizitka = service.getById(id);
         if (vizitka == null) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
-        return new ModelAndView("vizitka").addObject("vizitka", vizitka);
+        return new ModelAndView("vizitka").addObject("vizitka", service.getById(id));
     }
     /*
     public ResponseEntity vizitka(@PathVariable int id) {

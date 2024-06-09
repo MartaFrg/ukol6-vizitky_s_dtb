@@ -21,8 +21,8 @@ public class VizitkaService {
         return vizitkaRepository.findAll();
     }
 
-   public Vizitka getById(int id) {
-        return vizitkaRepository.findVizitkaById(id+1);
+   public Vizitka getById(long id) {
+        return vizitkaRepository.findById(id);
     }
 
     public void PridejVizitku(Vizitka vizitka) {

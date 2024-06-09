@@ -12,7 +12,7 @@ import java.util.List;
 
 @Repository
 public interface VizitkaRepository extends CrudRepository<Vizitka, Long> {
-    Vizitka findVizitkaById(int id);
+    Vizitka findById(long id);
     List<Vizitka> findAll();
 
     //List<Vizitka> findAllByOrderByVizitkaIdAsc();
