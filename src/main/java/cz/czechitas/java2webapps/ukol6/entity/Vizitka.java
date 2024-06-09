@@ -13,7 +13,7 @@ import java.util.Objects;
 @Entity
 public class Vizitka {
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
     @NotBlank
     private String celeJmeno;
@@ -21,6 +21,8 @@ public class Vizitka {
     private String firma;
     @NotBlank
     private String ulice;
+    @NotBlank
+    private String obec;
     @NotBlank
     private String psc;
     private String email;
@@ -39,6 +41,14 @@ public class Vizitka {
         this.firma = firma;
         this.celeJmeno = celeJmeno;
         this.id = id;
+    }
+
+    public String getObec() {
+        return obec;
+    }
+
+    public void setObec(String obec) {
+        this.obec = obec;
     }
 
     public String getPsc() {

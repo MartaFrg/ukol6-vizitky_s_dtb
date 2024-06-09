@@ -5,12 +5,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface VizitkaRepository extends JpaRepository<Vizitka, Long> {
+public interface VizitkaRepository extends CrudRepository<Vizitka, Long> {
     Vizitka findVizitkaById(int id);
     List<Vizitka> findAll();
 

@@ -24,10 +24,11 @@ public class VizitkaService {
    public Vizitka getById(int id) {
         return vizitkaRepository.findVizitkaById(id+1);
     }
-    /*
+
     public void PridejVizitku(Vizitka vizitka) {
-        seznamVizitek.add(vizitka);
+        vizitkaRepository.save(vizitka);
     }
+    /*
     public void SmazVizitku(int id) {
         seznamVizitek.remove(id);
     }*/
